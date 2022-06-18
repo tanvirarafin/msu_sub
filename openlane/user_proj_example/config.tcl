@@ -26,11 +26,17 @@ set ::env(VERILOG_FILES) "\
 
 set ::env(DESIGN_IS_CORE) 0
 
+
 set ::env(CLOCK_PORT) "wb_clk_i"
 set ::env(CLOCK_NET) "counter.clk"
-set ::env(CLOCK_PERIOD) "100"
+set ::env(CLOCK_PERIOD) "10"
 
-set ::env(PL_TARGET_DENSITY) 0.52
+set ::env(FP_SIZING) absolute
+set ::env(DIE_AREA) "0 0 900 600"
+
+set ::env(PL_BASIC_PLACEMENT) 1
+set ::env(PL_TARGET_DENSITY) 0.05
+
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 

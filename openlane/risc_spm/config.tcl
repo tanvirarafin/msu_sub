@@ -10,7 +10,8 @@ set ::env(VERILOG_FILES) [glob $::env(DESIGN_DIR)/../../verilog/rtl/risc_spm/*.v
 set ::env(CLOCK_PERIOD) "100.0"
 set ::env(CLOCK_PORT) "clk"
 
-set ::env(PL_TARGET_DENSITY) "0.57"
+set ::env(PL_TARGET_DENSITY) "0.52"
+set ::env(GLB_RT_ADJUSTMENT) "0.2"
 set ::env(FP_CORE_UTIL) "50"
 
 
