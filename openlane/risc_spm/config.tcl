@@ -13,9 +13,9 @@ set ::env(CLOCK_PORT) "clk"
 
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 1000 1000"
+set ::env(DIE_AREA) "0 0 1500 1500"
 
-set ::env(PL_BASIC_PLACEMENT) 1
+set ::env(PL_BASIC_PLACEMENT) 0
 set ::env(PL_TARGET_DENSITY) 0.15
 
 
