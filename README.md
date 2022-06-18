@@ -6,7 +6,6 @@
 |-----------------------------------------|
 
 ## Please fill in your project documentation in this README.md file 
+This is a submission from Morgan State University for class EEGR 463.
 
-Refer to [README](docs/source/quickstart.rst) for a quick start of how to use caravel_user_project
-
-Refer to [README](docs/source/index.rst) for this sample project documentation. 
+This design contains an 8-bit RISC processor.
