@@ -82,41 +82,23 @@ module user_project_wrapper #(
 /* User project is instantiated  here   */
 /*--------------------------------------*/
 
-user_proj_example mprj (
-`ifdef USE_POWER_PINS
-	.vccd1(vccd1),	// User area 1 1.8V power
-	.vssd1(vssd1),	// User area 1 digital ground
-`endif
+RISC_SPM RISC_SPM(
 
-    .wb_clk_i(wb_clk_i),
-    .wb_rst_i(wb_rst_i),
 
-    // MGMT SoC Wishbone Slave
+    .clk(wb_clk_i),
 
-    .wbs_cyc_i(wbs_cyc_i),
-    .wbs_stb_i(wbs_stb_i),
-    .wbs_we_i(wbs_we_i),
-    .wbs_sel_i(wbs_sel_i),
-    .wbs_adr_i(wbs_adr_i),
-    .wbs_dat_i(wbs_dat_i),
-    .wbs_ack_o(wbs_ack_o),
-    .wbs_dat_o(wbs_dat_o),
-
-    // Logic Analyzer
-
-    .la_data_in(la_data_in),
-    .la_data_out(la_data_out),
-    .la_oenb (la_oenb),
 
     // IO Pads
 
-    .io_in (io_in),
-    .io_out(io_out),
-    .io_oeb(io_oeb),
+    .rst(la_data_in[0]),
+    .ext_write(io_in[8]),
 
-    // IRQ
-    .irq(user_irq)
-);
+    .data_bus(io_in[16:9]),
+    .address_bus(io_in[24:17]),
+    .memory_bus(io_out[32:25]),
+
+    .io_oeb(io_oeb[32:25])
+    );
 
 endmodule	// user_project_wrapper
 

@@ -30,7 +30,7 @@ set ::env(CLOCK_PORT) "wb_clk_i"
 set ::env(CLOCK_NET) "counter.clk"
 set ::env(CLOCK_PERIOD) "100"
 
-
+set ::env(PL_TARGET_DENSITY) 0.52
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
