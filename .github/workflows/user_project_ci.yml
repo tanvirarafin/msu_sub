@@ -141,7 +141,7 @@ jobs:
         run: |
           make user_proj_example
           make user_project_wrapper
-
+	  make risc_spm
       - name: Run DV RTL tests
         run: |
           make verify-io_ports-rtl 
