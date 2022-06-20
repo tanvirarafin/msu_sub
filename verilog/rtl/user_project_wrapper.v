@@ -83,11 +83,12 @@ module user_project_wrapper #(
 /*--------------------------------------*/
 
 RISC_SPM RISC_SPM(
-
+`ifdef USE_POWER_PINS
+    .vccd1(vccd1),	// User area 1 1.8V supply
+    .vssd1(vssd1),	// User area 1 digital ground
+`endif
 
     .clk(wb_clk_i),
-
-
     // IO Pads
 
     .rst(la_data_in[0]),
