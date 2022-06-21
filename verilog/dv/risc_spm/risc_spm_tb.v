@@ -53,9 +53,9 @@ module risc_spm_tb;
 		end
 		$display("%c[1;31m",27);
 		`ifdef GL
-			$display ("Monitor: Timeout, Test Mega-Project IO Ports (GL) Failed");
+			$display ("Monitor: Test Mega-Project IO Ports (GL) Finished");
 		`else
-			$display ("Monitor: Timeout, Test Mega-Project IO Ports (RTL) Failed");
+			$display ("Monitor: Test Mega-Project IO Ports (RTL) Finished");
 		`endif
 		$display("%c[0m",27);
 		$finish;

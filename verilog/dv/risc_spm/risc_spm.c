@@ -99,6 +99,6 @@ void main()
     reg_la0_data = 1;
     reg_la0_data = 0;
 
-    //don nothing
+    //do nothing
 }
 
