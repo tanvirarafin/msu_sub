@@ -148,4 +148,3 @@ jobs:
       - name: Run DV GL tests
         run: |
           make verify-all-gl
-          make verify-all-gl-sdf
