@@ -39,14 +39,15 @@ set ::env(VERILOG_FILES) "\
 
 ## Clock configurations
 set ::env(CLOCK_PORT) "user_clock2"
-set ::env(CLOCK_NET) "mprj.clk"
+set ::env(CLOCK_NET) "RISC_SPM.clk"
 
-set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PERIOD) "100"
 
 ## Internal Macros
 ### Macro PDN Connections
 set ::env(FP_PDN_MACRO_HOOKS) "\
-	mprj vccd1 vssd1"
+	RISC_SPM vccd1 vssd1 \
+	asmd_multiplier vccd1 vssd1"
 
 ### Macro Placement
 set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro.cfg
@@ -54,14 +55,16 @@ set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro.cfg
 ### Black-box verilog and views
 set ::env(VERILOG_FILES_BLACKBOX) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/risc_spm/RISC_SPM.v"
+   	$script_dir/../../verilog/rtl/risc_spm/src/RISC_SPM.v \
+   	$script_dir/../../verilog/rtl/asmd_multiplier/src/asmd_multiplier.v"
 
 set ::env(EXTRA_LEFS) "\
-	$script_dir/../../lef/RISC_SPM.lef"
+	$script_dir/../../lef/RISC_SPM.lef \
+	$script_dir/../../lef/asmd_multiplier.lef"
 
 set ::env(EXTRA_GDS_FILES) "\
-	$script_dir/../../gds/RISC_SPM.gds"
-
+	$script_dir/../../gds/RISC_SPM.gds \
+    $script_dir/../../gds/asmd_multiplier.gds"
 # set ::env(GLB_RT_MAXLAYER) 5
 set ::env(RT_MAX_LAYER) {met4}
 

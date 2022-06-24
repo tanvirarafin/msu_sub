@@ -1,0 +1,125 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1656033679
+<< obsli1 >>
+rect 1104 2159 58880 57681
+<< obsm1 >>
+rect 14 2128 59970 57712
+<< metal2 >>
+rect 1306 59200 1362 60000
+rect 12898 59200 12954 60000
+rect 25134 59200 25190 60000
+rect 36726 59200 36782 60000
+rect 48318 59200 48374 60000
+rect 59910 59200 59966 60000
+rect 18 0 74 800
+rect 11610 0 11666 800
+rect 23202 0 23258 800
+rect 34794 0 34850 800
+rect 47030 0 47086 800
+rect 58622 0 58678 800
+<< obsm2 >>
+rect 20 59144 1250 59242
+rect 1418 59144 12842 59242
+rect 13010 59144 25078 59242
+rect 25246 59144 36670 59242
+rect 36838 59144 48262 59242
+rect 48430 59144 59854 59242
+rect 20 856 59964 59144
+rect 130 800 11554 856
+rect 11722 800 23146 856
+rect 23314 800 34738 856
+rect 34906 800 46974 856
+rect 47142 800 58566 856
+rect 58734 800 59964 856
+<< metal3 >>
+rect 0 49648 800 49768
+rect 59200 47608 60000 47728
+rect 0 36728 800 36848
+rect 59200 35368 60000 35488
+rect 0 24488 800 24608
+rect 59200 23128 60000 23248
+rect 0 12248 800 12368
+rect 59200 10208 60000 10328
+<< obsm3 >>
+rect 800 49848 59200 57697
+rect 880 49568 59200 49848
+rect 800 47808 59200 49568
+rect 800 47528 59120 47808
+rect 800 36928 59200 47528
+rect 880 36648 59200 36928
+rect 800 35568 59200 36648
+rect 800 35288 59120 35568
+rect 800 24688 59200 35288
+rect 880 24408 59200 24688
+rect 800 23328 59200 24408
+rect 800 23048 59120 23328
+rect 800 12448 59200 23048
+rect 880 12168 59200 12448
+rect 800 10408 59200 12168
+rect 800 10128 59120 10408
+rect 800 2143 59200 10128
+<< metal4 >>
+rect 4208 2128 4528 57712
+rect 19568 2128 19888 57712
+rect 34928 2128 35248 57712
+rect 50288 2128 50608 57712
+<< labels >>
+rlabel metal3 s 59200 10208 60000 10328 6 clk
+port 1 nsew signal input
+rlabel metal2 s 59910 59200 59966 60000 6 product[0]
+port 2 nsew signal output
+rlabel metal2 s 36726 59200 36782 60000 6 product[1]
+port 3 nsew signal output
+rlabel metal2 s 23202 0 23258 800 6 product[2]
+port 4 nsew signal output
+rlabel metal3 s 59200 47608 60000 47728 6 product[3]
+port 5 nsew signal output
+rlabel metal2 s 58622 0 58678 800 6 product[4]
+port 6 nsew signal output
+rlabel metal3 s 0 49648 800 49768 6 product[5]
+port 7 nsew signal output
+rlabel metal2 s 25134 59200 25190 60000 6 product[6]
+port 8 nsew signal output
+rlabel metal2 s 18 0 74 800 6 product[7]
+port 9 nsew signal output
+rlabel metal2 s 12898 59200 12954 60000 6 ready
+port 10 nsew signal output
+rlabel metal2 s 47030 0 47086 800 6 reset
+port 11 nsew signal input
+rlabel metal2 s 11610 0 11666 800 6 start
+port 12 nsew signal input
+rlabel metal4 s 4208 2128 4528 57712 6 vccd1
+port 13 nsew power input
+rlabel metal4 s 34928 2128 35248 57712 6 vccd1
+port 13 nsew power input
+rlabel metal4 s 19568 2128 19888 57712 6 vssd1
+port 14 nsew ground input
+rlabel metal4 s 50288 2128 50608 57712 6 vssd1
+port 14 nsew ground input
+rlabel metal3 s 0 12248 800 12368 6 word0[0]
+port 15 nsew signal input
+rlabel metal3 s 59200 35368 60000 35488 6 word0[1]
+port 16 nsew signal input
+rlabel metal3 s 0 24488 800 24608 6 word0[2]
+port 17 nsew signal input
+rlabel metal2 s 48318 59200 48374 60000 6 word0[3]
+port 18 nsew signal input
+rlabel metal2 s 34794 0 34850 800 6 word1[0]
+port 19 nsew signal input
+rlabel metal3 s 0 36728 800 36848 6 word1[1]
+port 20 nsew signal input
+rlabel metal2 s 1306 59200 1362 60000 6 word1[2]
+port 21 nsew signal input
+rlabel metal3 s 59200 23128 60000 23248 6 word1[3]
+port 22 nsew signal input
+<< properties >>
+string FIXED_BBOX 0 0 60000 60000
+string LEFclass BLOCK
+string LEFview TRUE
+string GDS_END 1572052
+string GDS_FILE /home/mdtanvirarafin/caravel_user_project/openlane/asmd_multiplier/runs/asmd_multiplier/results/finishing/asmd_multiplier.magic.gds
+string GDS_START 300338
+<< end >>
+

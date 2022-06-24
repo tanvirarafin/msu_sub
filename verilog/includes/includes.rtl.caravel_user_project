@@ -1,5 +1,6 @@
 # Caravel user project includes
 -v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v	     
--v $(USER_PROJECT_VERILOG)/rtl/risc_spm/RISC_SPM.v
+-v $(USER_PROJECT_VERILOG)/rtl/risc_spm/src/RISC_SPM.v
+-v $(USER_PROJECT_VERILOG)/rtl/asmd_multiplier/src/asmd_multiplier.v
 
  

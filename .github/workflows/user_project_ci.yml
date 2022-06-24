@@ -140,6 +140,7 @@ jobs:
       - name: Harden using Openlane
         run: |
           make risc_spm
+          make asmd_multiplier
           make user_project_wrapper
       - name: Run DV RTL tests
         run: |

@@ -1,0 +1,10 @@
+Setting project user ID to: 0000ABCD
+Step 1:  Modify layout of the user_id_programming subcell
+Done!
+Step 2:  Add user project ID parameter to source verilog.
+Done!
+Step 3:  Add user project ID parameter to gate-level verilog.
+Done!
+Step 4:  Add user project ID text to top level layout.
+Done!
+Set user ID completed.

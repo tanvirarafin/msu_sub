@@ -101,6 +101,19 @@ RISC_SPM RISC_SPM(
     .io_oeb(io_oeb[32:25])
     );
 
+asmd_multiplier asmd_multiplier(
+`ifdef USE_POWER_PINS
+    .vccd1(vccd1),	// User area 1 1.8V supply
+    .vssd1(vssd1),	// User area 1 digital ground
+`endif
+    .clk(la_data_in[32]),
+    .product(la_data_out[56:49]),
+    .ready(la_data_out[48]),
+    .word0(la_data_in[42:39]),
+    .word1(la_data_in[38:35]),
+    .start(la_data_in[34]),
+    .reset(la_data_in[33]),
+    );
 endmodule	// user_project_wrapper
 
 `default_nettype wire
